@@ -2,34 +2,39 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Selamat Datang di Webku</title>
     <style>
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: rgba(255, 255, 255, 0.9);
+            font-family: Arial, sans-serif;
+            background: #fffafc;
             text-align: center;
             margin: 0;
             padding: 20px;
             color: #ff69b4;
         }
         .container {
-            background: rgba(255, 255, 255, 0.9);
+            background: #fff;
             padding: 20px;
-            border-radius: 20px;
+            border-radius: 10px;
             max-width: 800px;
-            width: 90%;
             margin: auto;
-            box-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
-            border: 5px solid pink;
+            box-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
+            border: 3px solid pink;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
         img {
             width: 100%;
-            max-width: 250px;
-            border-radius: 20px;
-            margin: 10px;
-            border: 5px solid pink;
-            box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+            max-width: 230px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid pink;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
         }
         .quotes {
             font-size: 16px;
@@ -38,58 +43,58 @@
             background: rgba(255, 240, 245, 0.7);
             padding: 10px;
             border-radius: 10px;
-            display: block;
             margin: 10px auto;
-            max-width: 80%;
+            max-width: 90%;
             text-align: center;
-            box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+            box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
         }
         .button {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 12px 20px;
             background: #ff69b4;
             color: white;
             text-decoration: none;
             border-radius: 20px;
             font-weight: bold;
-            box-shadow: 0 5px 10px rgba(255, 105, 180, 0.5);
             transition: 0.3s;
+            margin-top: 15px;
         }
         .button:hover {
             background: #ff1493;
-            box-shadow: 0 7px 15px rgba(255, 20, 147, 0.7);
+            box-shadow: 0 5px 10px rgba(255, 20, 147, 0.5);
         }
         .about {
             font-size: 16px;
             background: rgba(255, 240, 245, 0.9);
             padding: 15px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin-top: 20px;
-            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
             text-align: justify;
             line-height: 1.6;
             color: #d63384;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
         }
-
-        /* Responsiveness */
         @media (max-width: 768px) {
             .container {
                 width: 95%;
                 padding: 15px;
             }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
             img {
-                max-width: 200px;
+                max-width: 80%;
             }
             .quotes {
                 font-size: 14px;
-                max-width: 90%;
             }
             .about {
                 font-size: 14px;
                 padding: 10px;
             }
             .button {
-                padding: 10px 20px;
+                padding: 10px 15px;
                 font-size: 14px;
             }
         }
@@ -98,9 +103,13 @@
 <body>
     <div class="container">
         <h1 style="color: hotpink;">🎀 Selamat Datang di Web Muthia! 🎀</h1>
-        <img src="mutia5.jpg" alt="Foto 1">
-        <img src="mutia3.jpg" alt="Foto 2">
-        <img src="mutia2.jpg" alt="Foto 3">
+        
+        <div class="image-container">
+            <img src="mutia3.jpg" alt="Foto 1">
+            <img src="mutia5.jpg" alt="Foto 2">
+            <img src="mutia2.jpg" alt="Foto 3">
+        </div>
+
         <p class="quotes">"Jadilah diri sendiri karena versi asli selalu lebih berharga daripada tiruan."</p>
         <p class="quotes">"Hidup itu indah jika kita mengisinya dengan cinta dan kebahagiaan."</p>
         <p class="quotes">"Kegagalan adalah awal dari kesuksesan, tetap semangat!"</p>
@@ -109,7 +118,7 @@
             <h2>✨ Perkenalan ✨</h2>
             <p>Haii! 🎀✨</p>
             <p>Kenalin, aku <b>Muthia Rizka Y. Inga</b>, biasa dipanggil <b>Tia</b>. Aku seorang mahasiswa jurusan <b>Sistem Informasi</b> di <b>Universitas Tadulako</b>.</p>
-            <p>Aku suka belajar hal baru, terutama yang berhubungan dengan teknologi dan sistem informasi.
+            <p>Aku suka belajar hal baru, terutama yang berhubungan dengan teknologi dan sistem informasi.</p>
         </div>
 
         <a href="biodataku.html" class="button">💖 Lihat Biodata Lengkap 💖</a>
