@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: rgba(255, 255, 255, 0.9) ;
+            background: rgba(255, 255, 255, 0.9);
             text-align: center;
             margin: 0;
             padding: 20px;
@@ -17,14 +17,14 @@
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 20px;
-            width: 85%;
+            max-width: 800px;
             margin: auto;
             box-shadow: 0 0 25px rgba(255, 182, 193, 0.8);
             border: 6px solid pink;
         }
         img {
-            width: 220px;
-            height: 220px;
+            width: 180px;
+            height: 180px;
             border-radius: 15px;
             margin: 10px;
             border: 6px solid pink;
@@ -35,7 +35,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 25px;
+            gap: 15px;
             padding: 10px;
         }
         .bestie div {
@@ -43,7 +43,7 @@
             background: rgba(255, 240, 245, 0.8);
             padding: 12px;
             border-radius: 15px;
-            width: 240px; /* Lebarkan sedikit */
+            width: 200px;
             box-shadow: 0 0 12px rgba(255, 182, 193, 0.6);
             transition: transform 0.3s;
         }
@@ -51,22 +51,22 @@
             transform: scale(1.07);
         }
         .bestie img {
-            width: 220px; /* Ukuran diperbesar */
-            height: 220px; /* Ukuran diperbesar */
+            width: 180px;
+            height: 180px;
             border-radius: 15px;
             object-fit: cover;
             border: 5px solid hotpink;
             box-shadow: 0 0 12px rgba(255, 182, 193, 0.7);
         }
         .quote {
-            font-size: 15px;
+            font-size: 14px;
             font-style: italic;
             color: #ff1493;
             margin-top: 5px;
         }
         .button {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 12px 24px;
             background: #ff69b4;
             color: white;
             text-decoration: none;
@@ -74,10 +74,37 @@
             font-weight: bold;
             box-shadow: 0 6px 12px rgba(255, 105, 180, 0.5);
             transition: 0.3s;
+            margin: 10px 5px;
         }
         .button:hover {
             background: #ff1493;
             box-shadow: 0 8px 16px rgba(255, 20, 147, 0.7);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            img {
+                width: 140px;
+                height: 140px;
+            }
+            .bestie div {
+                width: 160px;
+            }
+            .bestie img {
+                width: 140px;
+                height: 140px;
+            }
+            .quote {
+                font-size: 12px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -127,6 +154,7 @@
         </div>
         
         <a href="index.html" class="button">Kembali ke Beranda</a>
+       
     </div>
 </body>
 </html>
